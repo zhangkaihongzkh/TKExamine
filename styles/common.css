@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@font-face{
+	font-family: "HiraginoSansGB";
+	src: url('../fonts/HiraginoSansGBW3.eot') format('eot');/*IE*/
+	src: url('../fonts/HiraginoSansGBW3.ttf') format('ttf');/*non-IE*/
+}
+ 
+/*common*/
+.comWidth{width: 980px;margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+
+/*clear float*/
+.clearfix:after{content: "";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+/*nav*/
+#navBox{position: relative; background-color: #151313;width:100%;height: 47px;}
+#navList{float: right;height: 47px;line-height: 47px;}
+#navList .logo{position: absolute; left: 0;top: 0;}
+#navList li{display: inline-block;margin-left: 72px;height: 100%; }
+#navList li a{color: #F4F0F0;line-height:35px;height: 35px;text-align: center;padding:6px 0;}
+#navList li a:hover{opacity: 0.8;filter: alpha(opacity=80);}
+#navList .navListActive a{color: #959595;}
+#navList .navListActive a:hover{opacity: 1;filter: alpha(opacity=100);}
+
+/*footer*/
+#footerBox{position: relative; background-color: #3F3F3F;width:100%;height: 68px;}
+#footerBox p{padding: 16px 0 17px 0;text-align: center;line-height: 35px;height:35px;font-size: 10px;text-align: center;}
+#footerBox p,
+#footerBox p a{color: #959595;}
+#footerBox p a:hover{text-decoration: underline;opacity: 0.8;filter: alpha(opacity=80);}

@@ -1,0 +1,116 @@
+@charset "utf-8";
+/******************** intro ********************/
+.intro{width: 1200px; margin: 0 auto; text-align: center; font-family: "HiraginoSansGB";}
+.intro .introH1{font-size: 48px; font-weight: lighter;}
+.intro .introH2{font-size: 24px; color: #888; line-height: 72px; font-weight: lighter;}
+.intro .firstUl{width: 1084px; margin: 0 auto;}
+.intro .firstUl .firstList{margin: 50px 50px;}
+.intro p, .intro .achievementList{text-align: left; font-size: 14px; color: #888;}
+.intro p{line-height: 32px;}
+.intro .achievementList{line-height: 48px;}
+
+/******************** infor ********************/
+.infor{width: 1200px; margin: 500px auto 0; text-align: center; font-family: "HiraginoSansGB";}
+.infor .inforH1{font-size: 48px; font-weight: lighter; color: #02D1A3;}
+.infor .inforH2{font-size: 24px; font-weight: lighter; color: #888;}
+.infor .inforH2 hr{display: inline-block; width: 150px; color: #888;}
+.infor ul{width: 1200px; height: 361px; margin: 0 auto;}
+.infor li{margin: 50px 75px;}
+.infor li .inforH3{font-size: 20px; color: #888; line-height: 40px; font-weight: lighter;}
+.infor li p{font-size: 12px; color: #888; line-height: 36px; font-weight: lighter;}
+.infor .imgBox{width: 111px; height: 111px; overflow: hidden; position: relative; margin: 0 auto;}
+.infor .imgBox img{position: absolute; top: 0; left: 0;}
+
+/******************** banner ********************/
+.picsSwitch { position:relative; width:1600px; margin:auto; height:580px; overflow:hidden;}
+.picsSwitch .pb { height:580px;}
+.picsSwitch .picBox { float:left; width:1600px; height:580px; overflow:hidden;}
+.picsSwitch .picBox a { margin:auto; display:block; width:1600px; height:580px;}
+
+.viewArrows { display:block; width:50px; height:50px; border-radius: 3px; line-height:50px; cursor:pointer; text-indent:-99999999px; position:absolute; top:230px;}
+.prev { left:10px; background:url(../images/index_arrow_left.png) center center no-repeat;}
+.next { right:10px; background:url(../images/index_arrow_right.png) center center no-repeat;}
+
+.picsSwitch .picBox a.picBanner001 { background:url(../images/index_banner.jpg) center top no-repeat;}
+.picsSwitch .picBox a.picBanner002 { background:url(../images/index_banner.jpg) center top no-repeat;}
+.picsSwitch .picBox a.picBanner003 { background:url(../images/index_banner.jpg) center top no-repeat;}
+
+.banner .picsSwitchClients { display:; width:100%; height:70px; position:absolute; left:0; bottom:0; overflow:hidden;}
+.banner .picsSwitchClients ul { margin:20px auto 0; width:165px; height:auto; overflow:hidden;}
+.banner .picsSwitchClients ul li { float:left; padding:20px 0; cursor:pointer; }
+.banner .picsSwitchClients ul li span { display:block; margin-right:5px; width:50px; height:5px; text-indent:-999999px; background:#B0B8BA;}
+.banner .picsSwitchClients ul li.li_1 span { background-position:0 -124px;}/*normal*/
+.banner .picsSwitchClients ul li.li_2 span { background-position:-159px -124px;}
+.banner .picsSwitchClients ul li.li_3 span { background-position:-318px -124px;}
+.banner .picsSwitchClients ul li.li_1 .hover { background-position:0 -185px;}/*hover*/
+.banner .picsSwitchClients ul li.li_2 .hover { background-position:-159px -185px;}
+.banner .picsSwitchClients ul li.li_3 .hover { background-position:-318px -185px;}
+.banner .picsSwitchClients ul li.li_1 .current { background-position:0 -185px;}/*current*/
+.banner .picsSwitchClients ul li.li_2 .current { background-position:-159px -185px;}
+.banner .picsSwitchClients ul li.li_3 .current { background-position:-318px -185px;}
+
+/******************** 响应式 ********************/
+@media all and (max-width: 1030px) {
+}
+/* Default wide-screen styles */
+@media all and (max-width: 1024px) {
+	.header .inner_header { width:960px; height:90px;}
+	.picsSwitch , .picsSwitch .picBox , .picsSwitch .picBox a { width:1024px;}
+	.prev { left:25px;}
+	.next { right:25px;}
+}
+@media all and (max-width: 960px) {
+	.banner { overflow:hidden;}
+	.picsSwitch { height:400px;}
+	.picsSwitch .pb { height:400px;}
+	.picsSwitch .picBox a { height:400px; background-size:1103.4px 400px !important;}
+	.picsSwitch , .picsSwitch .picBox , .picsSwitch .picBox a { width:960px;}
+}
+@media all and (max-width: 768px) {
+	.banner { overflow:hidden;}
+	.picsSwitch { height:400px;}
+	.picsSwitch .pb { height:400px;}
+	.picsSwitch .picBox a { height:400px; background-size:1103.4px 400px !important;}
+	.picsSwitch , .picsSwitch .picBox , .picsSwitch .picBox a { width:768px;}
+	.case_box { overflow:hidden;}
+	.case_box ul { width:740px;}
+	.case_box, .case_box .tabs { width:700px;}
+	.case_box .ul_box { width:740px;}
+	.case_box ul li .cover { width:218px;}
+}
+@media all and (max-width: 640px) {
+	.prev { left:40px;}
+	.next { right:40px;}
+	.banner { margin-bottom:30px; overflow:hidden;}
+	.picsSwitch { height:400px;}
+	.picsSwitch .pb { height:400px;}
+	.picsSwitch .picBox a { height:400px; background-size:1103.4px 400px !important;}
+	.picsSwitch , .picsSwitch .picBox , .picsSwitch .picBox a { width:640px;}
+}
+@media all and (max-width: 480px) {
+	.prev { left:10px;}
+	.next { right:10px;}
+	.banner { margin-bottom:25px; overflow:hidden;}
+	.banner .picsSwitchClients { height:30px;}
+	.banner .picsSwitchClients ul { margin:0 auto;}
+	.banner .picsSwitchClients ul li { padding:15px 0;}
+	.picsSwitch { width:480px; height:200px;}
+	.picsSwitch .pb { height:250px;}
+	.picsSwitch .picBox a { height:200px; background-size:630px 218px !important;}
+	.picsSwitch , .picsSwitch .picBox , .picsSwitch .picBox a { width:480px;}
+}
+@media all and (max-width: 320px) {
+	.prev { left:10px;}
+	.next { right:10px;}
+	.banner { margin-bottom:15px; overflow:hidden;}
+	.banner .picsSwitchClients { height:30px;}
+	.banner .picsSwitchClients ul { margin:0 auto;}
+	.banner .picsSwitchClients ul li { padding:15px 0;}
+	.picsSwitch { width:320px; height:200px;}
+	.picsSwitch .pb { height:200px;}
+	.picsSwitch .picBox a { height:200px; background-size:568px 200px !important;}
+	.picsSwitch , .picsSwitch .picBox , .picsSwitch .picBox a { width:320px;}
+}
+@media all and (max-width: 240px) {
+	body {}
+}
